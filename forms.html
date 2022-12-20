@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta>
+        </meta>
+    </head>
+    <body>
+        <form action="#" >
+            <label> Name </label>
+            <input type="text" name="username"  required/>
+            <label> Email </label>
+            <input type="email", name="email"  required />
+            <label> Password </label>
+            <input type="password", name="password"  required/>
+            <button onclick ="Onsignup(event)" > Sign Up </button>
+            
+        </form>
+        <script>
+            function Onsignup(event){
+                event.preventDefault();
+                console.log(event.target.username.value)
+            }
+        </script>
+    </body>
+</html>
